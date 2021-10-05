@@ -10,7 +10,7 @@
       </p>
     </div>
     <div class="form__group">
-      <label for="name" class="form__label">Name</label>
+      <label for="name" class="form__label">Name*</label>
       <input
         type="text"
         id="name"
@@ -25,7 +25,7 @@
       <small class="form__error">{{ nameError }}</small>
     </div>
     <div class="form__group">
-      <label for="email" class="form__label">Email</label>
+      <label for="email" class="form__label">Email*</label>
       <input
         @blur="emailCheck"
         type="email"
@@ -48,7 +48,7 @@
       />
     </div>
     <div class="form__group">
-      <label for="message" class="form__label">Message</label>
+      <label for="message" class="form__label">Message*</label>
       <textarea
         @blur="messageCheck"
         :class="{ error: messageError }"
